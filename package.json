@@ -1,0 +1,33 @@
+{
+  "name": "time-matrix",
+  "private": true,
+  "version": "0.1.0",
+  "description": "to manage add day logs",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "build:win": "cross-env NODE_ENV=production npm run build",
+    "start:win": "cross-env NODE_ENV=production npm start"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.5.0",
+    "@strapi/plugin-users-permissions": "4.5.0",
+    "@strapi/strapi": "4.5.0",
+    "better-sqlite3": "7.4.6",
+    "cross-env": "^7.0.3",
+    "pg": "^8.8.0"
+  },
+  "author": {
+    "name": "Gaurav M."
+  },
+  "strapi": {
+    "uuid": "c1851bb0-d2b4-49d7-9f89-2bf7bf4979aa"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

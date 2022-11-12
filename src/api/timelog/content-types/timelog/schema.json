@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timelogs",
+  "info": {
+    "singularName": "timelog",
+    "pluralName": "timelogs",
+    "displayName": "Daylog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Date": {
+      "type": "date",
+      "required": true,
+      "unique": true
+    },
+    "Remarks": {
+      "type": "string",
+      "required": false
+    },
+    "TimeLog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "time.timelog"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "daylogs"
+    }
+  }
+}
